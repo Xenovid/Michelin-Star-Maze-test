@@ -3,7 +3,17 @@ guid: 43f1ea90ff8484549b81c968b770ded9
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cloth_grp_tableMat
+    second: {fileID: 2100000, guid: e3a8422c9d125af47868ff7a95dad0c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grp_table_table1Mat
+    second: {fileID: 2100000, guid: e3a8422c9d125af47868ff7a95dad0c7, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
