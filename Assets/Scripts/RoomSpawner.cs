@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Security.Cryptography;
 using UnityEngine;
 
@@ -14,9 +15,10 @@ public class RoomSpawner : MonoBehaviour
 
 
     private RoomTemplates templates;
+    private ItemTemplate food;
     private int rand;
     private bool spawned = false;
-
+    
 
     void Start()
     {
