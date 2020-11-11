@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemSpawner : MonoBehaviour
+public class ItemTemplate : MonoBehaviour
 {
-    
+    public GameObject[] foodobjs;
 }

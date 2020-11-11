@@ -158,15 +158,11 @@ MonoBehaviour:
   - {fileID: 4624889783924665269, guid: 0b180e07320517649a88b72af7fb5393, type: 3}
   - {fileID: 7643052881309378048, guid: eddfe8a49cda1884c8d27e7ce0c0dfad, type: 3}
   - {fileID: 2201705810586574274, guid: 1f28532bd5edc8540a375e37e378f67e, type: 3}
-  - {fileID: 7146765977306984957, guid: 5fc81ca0bc1d4d248853c24baa1cd8e5, type: 3}
-  - {fileID: 2943806601810707579, guid: 7bb14c02e97235a49951916836014832, type: 3}
   topRooms:
   - {fileID: 7005551113187247546, guid: d00d8ce4d761a3b41b2acbc8b1e94caf, type: 3}
   - {fileID: 8823139949453518794, guid: 101af2624dbc2a24c844afab16743fec, type: 3}
   - {fileID: 4624889783924665269, guid: 0b180e07320517649a88b72af7fb5393, type: 3}
   - {fileID: 1175255431734128223, guid: cab80031107f96e4cbd1f17366c6f5a7, type: 3}
-  - {fileID: 2402511039627975528, guid: 52cf98be165defd43a4c8fa70344c90c, type: 3}
-  - {fileID: 7146765977306984957, guid: 5fc81ca0bc1d4d248853c24baa1cd8e5, type: 3}
   - {fileID: 2943806601810707579, guid: 7bb14c02e97235a49951916836014832, type: 3}
   leftRooms:
   - {fileID: 6733617094898944478, guid: 19adb3571bcead84cb91368ceaf82768, type: 3}
@@ -174,7 +170,6 @@ MonoBehaviour:
   - {fileID: 5985605596671573140, guid: 15684849a8094a044baf99a4e197c1e5, type: 3}
   - {fileID: 7005551113187247546, guid: d00d8ce4d761a3b41b2acbc8b1e94caf, type: 3}
   - {fileID: 2201705810586574274, guid: 1f28532bd5edc8540a375e37e378f67e, type: 3}
-  - {fileID: 2402511039627975528, guid: 52cf98be165defd43a4c8fa70344c90c, type: 3}
   - {fileID: 2943806601810707579, guid: 7bb14c02e97235a49951916836014832, type: 3}
   rightRooms:
   - {fileID: 5985605596671573140, guid: 15684849a8094a044baf99a4e197c1e5, type: 3}
@@ -182,8 +177,6 @@ MonoBehaviour:
   - {fileID: 4928141736944842195, guid: a5739c3f935fdcb44a4bd4e569656bc3, type: 3}
   - {fileID: 1175255431734128223, guid: cab80031107f96e4cbd1f17366c6f5a7, type: 3}
   - {fileID: 2201705810586574274, guid: 1f28532bd5edc8540a375e37e378f67e, type: 3}
-  - {fileID: 2402511039627975528, guid: 52cf98be165defd43a4c8fa70344c90c, type: 3}
-  - {fileID: 7146765977306984957, guid: 5fc81ca0bc1d4d248853c24baa1cd8e5, type: 3}
 --- !u!4 &29746008
 Transform:
   m_ObjectHideFlags: 0
@@ -410,6 +403,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d00da6dca7b11948bbc59524249824d, type: 3}
+--- !u!1 &1484571309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484571311}
+  - component: {fileID: 1484571310}
+  m_Layer: 0
+  m_Name: Food Template
+  m_TagString: Foods
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1484571310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484571309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fdee01ca6157147812d71a75a944c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodobjs:
+  - {fileID: 39475596220242080, guid: 44ce87b618e94b5609cf0af70384fa63, type: 3}
+  - {fileID: 4133171109057702524, guid: f295933b86b0810c0adfacf199ae656e, type: 3}
+--- !u!4 &1484571311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484571309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1496314146
 GameObject:
   m_ObjectHideFlags: 0

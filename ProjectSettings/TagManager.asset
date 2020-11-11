@@ -7,6 +7,7 @@ TagManager:
   - player
   - Spawn Point
   - Rooms
+  - Foods
   layers:
   - Default
   - TransparentFX
