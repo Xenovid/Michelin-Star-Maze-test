@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ItemTemplate : MonoBehaviour
 {
-    public GameObject[] food;
+    public GameObject[] foodobjs;
 }

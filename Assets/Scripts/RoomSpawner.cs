@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Security.Cryptography;
 using UnityEngine;
@@ -15,15 +16,19 @@ public class RoomSpawner : MonoBehaviour
 
 
     private RoomTemplates templates;
-    private ItemTemplate food;
+    private ItemTemplate items;
     private int rand;
+    private int rand1;
+    int i;
     private bool spawned = false;
-    
+
 
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
+        items = GameObject.FindGameObjectWithTag("Foods").GetComponent<ItemTemplate>();
         Invoke("Spawn", 0.1f);
+        
     }
 
     void Spawn()
@@ -56,6 +61,11 @@ public class RoomSpawner : MonoBehaviour
                 Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
             }
             spawned = true;
+            for (i = 0; i <= 5; i++) {
+                rand = UnityEngine.Random.Range(0, 1000);
+                rand1 = UnityEngine.Random.Range(0, 1000);
+                Instantiate(items.foodobjs[0], new Vector3 (rand, 1, rand1), new Vector3(0,0,0));
+            }
         }
     }
 

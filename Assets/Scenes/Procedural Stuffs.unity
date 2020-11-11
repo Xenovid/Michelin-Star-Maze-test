@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 1484571310}
   m_Layer: 0
   m_Name: Food Template
-  m_TagString: Untagged
+  m_TagString: Foods
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -432,9 +432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96fdee01ca6157147812d71a75a944c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food:
-  - {fileID: 4133171109057702524, guid: f295933b86b0810c0adfacf199ae656e, type: 3}
+  foodobjs:
   - {fileID: 39475596220242080, guid: 44ce87b618e94b5609cf0af70384fa63, type: 3}
+  - {fileID: 4133171109057702524, guid: f295933b86b0810c0adfacf199ae656e, type: 3}
 --- !u!4 &1484571311
 Transform:
   m_ObjectHideFlags: 0
