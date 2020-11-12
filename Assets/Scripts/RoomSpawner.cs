@@ -61,11 +61,11 @@ public class RoomSpawner : MonoBehaviour
                 Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
             }
             spawned = true;
-            for (i = 0; i <= 5; i++) {
-                rand = UnityEngine.Random.Range(0, 1000);
-                rand1 = UnityEngine.Random.Range(0, 1000);
-                Instantiate(items.foodobjs[0], new Vector3 (rand, 1, rand1), new Vector3(0,0,0));
-            }
+            //for (i = 0; i <= 5; i++) {
+               // rand = UnityEngine.Random.Range(0, 1000);
+               // rand1 = UnityEngine.Random.Range(0, 1000);
+               // Instantiate(items.foodobjs[0], new Vector3 (rand, 1, rand1), new Vector3(0,0,0));
+            //}
         }
     }
 
