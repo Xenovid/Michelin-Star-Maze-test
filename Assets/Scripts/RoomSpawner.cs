@@ -19,6 +19,7 @@ public class RoomSpawner : MonoBehaviour
     private ItemTemplate items;
     private int rand;
     private int rand1;
+    private int rand3;
     int i;
     private bool spawned = false;
 
@@ -61,19 +62,29 @@ public class RoomSpawner : MonoBehaviour
                 Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
             }
             spawned = true;
-            //for (i = 0; i <= 5; i++) {
-               // rand = UnityEngine.Random.Range(0, 1000);
-               // rand1 = UnityEngine.Random.Range(0, 1000);
-               // Instantiate(items.foodobjs[0], new Vector3 (rand, 1, rand1), new Vector3(0,0,0));
-            //}
+            
+            
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider otherCollider)
     {
-        if(other.CompareTag("Spawn Point"))
+        if (otherCollider.CompareTag("Spawn Point") && otherCollider.CompareTag("Spawn Point") != null)
         {
-            Destroy(gameObject);
+            if (otherCollider.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                Destroy(gameObject);
+                
+
+            }
+            spawned = true;
+
         }
+        //if (GameObject.FindGameObjectWithTag("Spawn Point") != null && otherCollider.GetComponent<RoomSpawner>().spawned == false)
+        //{
+          //  Instantiate(templates.closedRoom[0], transform.position, templates.closedRoom[0].transform.rotation);
+        //}
+        
     }
+
 }

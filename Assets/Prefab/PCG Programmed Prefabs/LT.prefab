@@ -84,6 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7005551113187247547}
+  - component: {fileID: 2891407338025072830}
   m_Layer: 0
   m_Name: LT
   m_TagString: Untagged
@@ -109,6 +110,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2891407338025072830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7005551113187247546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4c27ab221cc8c4fb11bd89828f1719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7166648731163168353
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +211,7 @@ GameObject:
   - component: {fileID: 168306434858115806}
   m_Layer: 0
   m_Name: Destroyer
-  m_TagString: Spawn Point
+  m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
