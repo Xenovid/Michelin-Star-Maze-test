@@ -234,7 +234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2201705810586574275}
-  - component: {fileID: 730658509374392940}
+  - component: {fileID: -6945297148788508135}
   m_Layer: 0
   m_Name: LBR
   m_TagString: Untagged
@@ -261,7 +261,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &730658509374392940
+--- !u!114 &-6945297148788508135
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

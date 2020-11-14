@@ -16,19 +16,21 @@ public class RoomSpawner : MonoBehaviour
 
 
     private RoomTemplates templates;
-    private ItemTemplate items;
+    
     private int rand;
     private int rand1;
-    private int rand3;
+    private int rand2;
     int i;
     private bool spawned = false;
+    
 
 
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        items = GameObject.FindGameObjectWithTag("Foods").GetComponent<ItemTemplate>();
+        
         Invoke("Spawn", 0.1f);
+        
         
     }
 
@@ -65,7 +67,9 @@ public class RoomSpawner : MonoBehaviour
             
             
         }
+        
     }
+
 
     void OnTriggerEnter(Collider otherCollider)
     {
@@ -86,5 +90,5 @@ public class RoomSpawner : MonoBehaviour
         //}
         
     }
-
+    
 }

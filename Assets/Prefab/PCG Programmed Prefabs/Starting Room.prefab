@@ -308,7 +308,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6702509355792899711}
-  - component: {fileID: 5743555181312663285}
   m_Layer: 0
   m_Name: Starting Room
   m_TagString: Untagged
@@ -336,18 +335,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5743555181312663285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6702509355792899710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd4c27ab221cc8c4fb11bd89828f1719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9156779046042111875
 GameObject:
   m_ObjectHideFlags: 0

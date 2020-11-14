@@ -11,7 +11,12 @@ public class RoomTemplates : MonoBehaviour
 
     public GameObject[] closedRoom;
 
-    public List<GameObject> rooms;
+    public GameObject[] Tables;
+
+    public GameObject[] Foods;
+
+    public List<GameObject> newrooms;
+    
 
     
 }
