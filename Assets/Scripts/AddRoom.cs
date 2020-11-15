@@ -10,10 +10,14 @@ public class AddRoom : MonoBehaviour
     int j;
     int rand;
 
-
-    void Start() {
+    void Awake()
+    {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         templates.newrooms.Add(this.gameObject);
+    }
+
+
+    void Start() {
         
     }
 

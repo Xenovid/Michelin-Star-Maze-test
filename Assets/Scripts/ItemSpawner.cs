@@ -12,17 +12,20 @@ public class ItemSpawner : MonoBehaviour
 
     public void SpawnItems()
     {
-        
-        for (j = 0; j <= 5; j++)
+        for (i = 0; i < templates.newrooms.Count; i++)
         {
-            rand = UnityEngine.Random.Range(0, templates.newrooms.Count);
-            Instantiate(templates.Foods[1], templates.newrooms[rand].transform.position, templates.Foods[0].transform.rotation);
+            for (j = 0; j < 5; j++)
+            {
+                UnityEngine.Random.seed = UnityEngine.Random.Range(0, 100);
+                rand = UnityEngine.Random.Range(0, templates.newrooms.Count);
+                Instantiate(templates.Foods[i], new Vector3(templates.newrooms[rand].transform.position.x+2, 1.5f, templates.newrooms[rand].transform.position.z-2), templates.Foods[0].transform.rotation);
+            }
         }
     }
 
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        SpawnItems();
+        Invoke("SpawnItems", 1.0f);
     }
 }
