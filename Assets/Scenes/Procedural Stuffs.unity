@@ -197,6 +197,7 @@ MonoBehaviour:
   - {fileID: 6733617094898944478, guid: 97d67c52e70ed494e963adb44e6c9748, type: 3}
   Tables:
   - {fileID: 919132149155446097, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
+  - {fileID: 5288108592296296107, guid: 2e8c3a108e9d498158e51f211c2e8ddc, type: 3}
   Foods:
   - {fileID: 39475596220242080, guid: 44ce87b618e94b5609cf0af70384fa63, type: 3}
   - {fileID: 4133171109057702524, guid: f295933b86b0810c0adfacf199ae656e, type: 3}
