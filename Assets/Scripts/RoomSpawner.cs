@@ -31,7 +31,6 @@ public class RoomSpawner : MonoBehaviour
         
         Invoke("Spawn", 0.1f);
         
-        
     }
 
     void Spawn()
@@ -65,11 +64,19 @@ public class RoomSpawner : MonoBehaviour
             }
             spawned = true;
             
-            
-        }
-        
-    }
 
+        }
+        Invoke("ClosedRooms", 2f);
+
+    }
+    void ClosedRooms()
+    {
+        if (GameObject.FindGameObjectWithTag("Spawn Point") != null && spawned == false)
+        {
+            //public spawn = GameObject.FindWithTag("Spawn Point");
+            Instantiate(templates.closedRoom[0], transform.position, templates.closedRoom[0].transform.rotation);
+        }
+    }
 
     void OnTriggerEnter(Collider otherCollider)
     {
@@ -77,18 +84,16 @@ public class RoomSpawner : MonoBehaviour
         {
             if (otherCollider.GetComponent<RoomSpawner>().spawned == false && spawned == false)
             {
+                //GameObject go = GameObject.FindGameObjectWithTag("Rooms");
                 Destroy(gameObject);
                 
 
             }
             spawned = true;
-
+            
         }
-        //if (GameObject.FindGameObjectWithTag("Spawn Point") != null && otherCollider.GetComponent<RoomSpawner>().spawned == false)
-        //{
-          //  Instantiate(templates.closedRoom[0], transform.position, templates.closedRoom[0].transform.rotation);
-        //}
-        
+       
+
     }
     
 }
