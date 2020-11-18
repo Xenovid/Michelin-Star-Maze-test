@@ -16,12 +16,14 @@ public class RoomSpawner : MonoBehaviour
 
 
     private RoomTemplates templates;
+    private SpawnTemplates spawna;
     
     private int rand;
     private int rand1;
     private int rand2;
     int i;
     private bool spawned = false;
+    public GameObject spawn;
     
 
 
@@ -30,7 +32,7 @@ public class RoomSpawner : MonoBehaviour
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         
         Invoke("Spawn", 0.1f);
-        
+        Invoke("ClosedRooms", 0.1f);
     }
 
     void Spawn()
@@ -66,15 +68,16 @@ public class RoomSpawner : MonoBehaviour
             
 
         }
-        Invoke("ClosedRooms", 2f);
+        
+        
 
     }
     void ClosedRooms()
     {
         if (GameObject.FindGameObjectWithTag("Spawn Point") != null && spawned == false)
         {
-            //public spawn = GameObject.FindWithTag("Spawn Point");
-            Instantiate(templates.closedRoom[0], transform.position, templates.closedRoom[0].transform.rotation);
+
+            Instantiate(templates.closedRoom[0], spawna.spawns[1].transform.position, templates.closedRoom[0].transform.rotation);
         }
     }
 
@@ -86,7 +89,7 @@ public class RoomSpawner : MonoBehaviour
             {
                 //GameObject go = GameObject.FindGameObjectWithTag("Rooms");
                 Destroy(gameObject);
-                
+                Invoke("ClosedRooms", 0.1f);
 
             }
             spawned = true;

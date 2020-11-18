@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 2902418083670023229}
   - component: {fileID: 5376256045058618865}
   - component: {fileID: 8699147718209707100}
+  - component: {fileID: 3695906784308213414}
   m_Layer: 0
   m_Name: Spawn Point (9)
   m_TagString: Spawn Point
@@ -167,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  spawn: {fileID: 0}
 --- !u!65 &5376256045058618865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -196,6 +198,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3695906784308213414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580183177448145896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d6e2f8302ce8a4fbfb31adb2381b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8177872735533961777
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +222,7 @@ GameObject:
   - component: {fileID: 4964846083101619330}
   - component: {fileID: 3893243807847677339}
   - component: {fileID: 6863875595615075314}
+  - component: {fileID: 650650806144515513}
   m_Layer: 0
   m_Name: Spawn Point (8)
   m_TagString: Spawn Point
@@ -242,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
+  spawn: {fileID: 0}
 --- !u!65 &3893243807847677339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -271,6 +287,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &650650806144515513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177872735533961777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d6e2f8302ce8a4fbfb31adb2381b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4928141736514964848
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7724143154064739231}
   - component: {fileID: 1949665699730877513}
   - component: {fileID: 2392823672328205433}
+  - component: {fileID: 6527804900349775995}
   m_Layer: 0
   m_Name: Spawn Point (17)
   m_TagString: Spawn Point
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
+  spawn: {fileID: 0}
 --- !u!65 &1949665699730877513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75,6 +77,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6527804900349775995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69013989201946863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d6e2f8302ce8a4fbfb31adb2381b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2402511039627975528
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +149,7 @@ GameObject:
   - component: {fileID: 7188801878965329368}
   - component: {fileID: 1645626380367558314}
   - component: {fileID: 2839016854962561696}
+  - component: {fileID: 8253648587853314757}
   m_Layer: 0
   m_Name: Spawn Point (18)
   m_TagString: Spawn Point
@@ -169,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
+  spawn: {fileID: 0}
 --- !u!65 &1645626380367558314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -198,6 +214,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8253648587853314757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2950161687823253407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d6e2f8302ce8a4fbfb31adb2381b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6670343333962453758
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +312,7 @@ GameObject:
   - component: {fileID: 2353395308278459495}
   - component: {fileID: 1548193645162413748}
   - component: {fileID: 11116861272955854}
+  - component: {fileID: 1454597822219200637}
   m_Layer: 0
   m_Name: Spawn Point (16)
   m_TagString: Spawn Point
@@ -318,6 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
+  spawn: {fileID: 0}
 --- !u!65 &1548193645162413748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -347,6 +377,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1454597822219200637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088567076793255126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d6e2f8302ce8a4fbfb31adb2381b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2402511040317638722
 PrefabInstance:
   m_ObjectHideFlags: 0

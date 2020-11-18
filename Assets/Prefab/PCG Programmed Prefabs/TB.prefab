@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7242246030274825492}
   - component: {fileID: 927623148113772589}
   - component: {fileID: 5596661871788071389}
+  - component: {fileID: 5234817568339451190}
   m_Layer: 0
   m_Name: Spawn Point (14)
   m_TagString: Spawn Point
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  spawn: {fileID: 0}
 --- !u!65 &927623148113772589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75,6 +77,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5234817568339451190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349014678393587085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d6e2f8302ce8a4fbfb31adb2381b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1975916763011626939
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,6 +101,7 @@ GameObject:
   - component: {fileID: 3473794090118167811}
   - component: {fileID: 5898397551910819443}
   - component: {fileID: 1308706884398932633}
+  - component: {fileID: 2214633713208620393}
   m_Layer: 0
   m_Name: Spawn Point (15)
   m_TagString: Spawn Point
@@ -121,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
+  spawn: {fileID: 0}
 --- !u!65 &5898397551910819443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -150,6 +166,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2214633713208620393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975916763011626939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d6e2f8302ce8a4fbfb31adb2381b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2678804282959385445
 GameObject:
   m_ObjectHideFlags: 0
