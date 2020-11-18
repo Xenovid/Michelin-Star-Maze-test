@@ -41,7 +41,31 @@ public class RoomSpawner : MonoBehaviour
         {
             if (spawna.spawns[i] != null)
             {
-                Instantiate(templates.closedRoom[0], transform.position, templates.closedRoom[0].transform.rotation);
+                if (openingDirection == 1)
+                {
+                    //Need spawn Bottom Door
+                    
+                    Instantiate(templates.closedRoom[1], transform.position, templates.closedRoom[1].transform.rotation);
+
+                }
+                else if (openingDirection == 2)
+                {
+                    //Need Top Door
+                    
+                    Instantiate(templates.closedRoom[2], transform.position, templates.closedRoom[2].transform.rotation);
+                }
+                else if (openingDirection == 3)
+                {
+                    //Need Left Door
+                    
+                    Instantiate(templates.closedRoom[4], transform.position, templates.closedRoom[3].transform.rotation);
+                }
+                else if (openingDirection == 4)
+                { }
+                    
+                    Instantiate(templates.closedRoom[3], transform.position, templates.closedRoom[4].transform.rotation);
+                
+                spawned = true;
             }
         }
     }
@@ -79,7 +103,7 @@ public class RoomSpawner : MonoBehaviour
 
         }
 
-        Invoke("ClosedRoom", 1.0f);
+        
 
     }
 
@@ -97,7 +121,7 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
             
         }
-        //Invoke("ClosedRoom", 4.0f);
+        Invoke("ClosedRoom", 4.0f);
 
     }
     
