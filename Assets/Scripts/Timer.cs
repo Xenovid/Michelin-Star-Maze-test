@@ -22,6 +22,8 @@ public class Timer : MonoBehaviour
             timerTxt.text = "Time left: " + timeLeft.ToString();
         }
         else if(isTimerRunning){
+            audioManager s = FindObjectOfType<audioManager>();
+            s.play("time");
             isTimerRunning = false;
             FC.timerFinished();
         }
@@ -33,8 +35,6 @@ public class Timer : MonoBehaviour
     }
     
     public void stopTimer(){
-        audioManager s = FindObjectOfType<audioManager>();
-        s.play("time");
         isTimerRunning = false;
         timeLeft = 0.0f;
     }

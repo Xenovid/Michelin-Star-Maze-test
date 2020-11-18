@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class foodChecker : MonoBehaviour
 {
@@ -15,26 +16,35 @@ public class foodChecker : MonoBehaviour
     public int requiredOil;
     public int requiredOnion;
 
+    public int requiredTables;
+
 
 
     public float timeLimit;
+    private bool isCollectingFood;
 
-    private bool gameRunning = true;
+    public bool getIscollectingFood()
+    {
+        return isCollectingFood;
+    }
+
 
     private void Start() {
-        gameRunning = true;
+        isCollectingFood = true;
         tim.startTimer(timeLimit);
     }
 
     private void OnTriggerEnter(Collider other) {
         Debug.Log("object entered");
-        if (gameRunning){
+        if (isCollectingFood){
             if (other.tag == "player"){
                 GameObject play = other.gameObject;
                 Collector col = play.GetComponent<Collector>();
                 if ((col.getApples() >= requiredApples) && (col.getChicken() >= requiredChicken) && (col.getBroccoli() >= requiredBroccoli) && (col.getOil() >= requiredOil) && (col.getOnion() >= requiredOnion)){
-                    mesSys.displayMessage("You Collected all the Items!");
-                    tim.stopTimer();
+                    mesSys.displayMessage("You Collected all the Items, now you need to serve your Customers!");
+                    isCollectingFood = false;
+                    foodCounter fc = FindObjectOfType<foodCounter>();
+                    fc.activateTableCount();
                 }
             }
         }
@@ -43,6 +53,21 @@ public class foodChecker : MonoBehaviour
     public void timerFinished(){
         Time.timeScale = 0.0f;
         RB.SetActive(true);
-        gameRunning = false;
+    }
+    public void checkTableCount(int num)
+    {
+        if(num >= requiredTables)
+        {
+            Time.timeScale = 0f;
+            Text txt = RB.transform.Find("Text").GetComponent<Text>();
+
+            if(txt == null)
+            {
+                Debug.Log("not found");
+            }
+            txt.text = "finished! Click to go to Main Menu";
+            RB.SetActive(true);
+            tim.stopTimer();
+        }
     }
 }

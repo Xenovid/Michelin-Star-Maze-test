@@ -10,6 +10,9 @@ public class foodCounter : MonoBehaviour
     public GameObject oilCount;
     public GameObject onionCount;
 
+    public GameObject tableCount;
+    public GameObject backDrop;
+
     public foodChecker FCH;
 
     private void Start()
@@ -19,6 +22,7 @@ public class foodCounter : MonoBehaviour
         changeBroccoli(0);
         changeOil(0);
         changeOnion(0);
+        changeTable(0);
     }
 
     public void changeApple(int num){
@@ -43,5 +47,44 @@ public class foodCounter : MonoBehaviour
     {
         Text onionTxt = onionCount.GetComponent<Text>();
         onionTxt.text = "Onion" + " " + num.ToString() + "/" + FCH.requiredOnion.ToString();
+    }
+    public void changeTable(int num)
+    {
+        Text tableTxt = tableCount.transform.Find("Text").gameObject.GetComponent<Text>();
+        tableTxt.text = "Tables: " + num.ToString() + "/" + FCH.requiredTables.ToString();
+        FCH.checkTableCount(num);
+    }
+    public void activateTableCount()
+    {
+        appleCount.SetActive(false);
+        chickenCount.SetActive(false);
+        broccoliCount.SetActive(false);
+        oilCount.SetActive(false);
+        onionCount.SetActive(false);
+        backDrop.SetActive(false);
+
+        tableCount.SetActive(true);
+    }
+    public void deactivateAll()
+    {
+        appleCount.SetActive(false);
+        chickenCount.SetActive(false);
+        broccoliCount.SetActive(false);
+        oilCount.SetActive(false);
+        onionCount.SetActive(false);
+        backDrop.SetActive(false);
+
+        tableCount.SetActive(false);
+    }
+    public void activate()
+    {
+        appleCount.SetActive(true);
+        chickenCount.SetActive(true);
+        broccoliCount.SetActive(true);
+        oilCount.SetActive(true);
+        onionCount.SetActive(true);
+        backDrop.SetActive(false);
+
+        tableCount.SetActive(false);
     }
 }

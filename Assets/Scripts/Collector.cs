@@ -9,9 +9,19 @@ public class Collector : MonoBehaviour
    private int broccoli = 0;
    private int oil = 0;
    private int onion = 0;
+   private int tables = 0;
 
    public foodCounter FC;
-   
+
+    private void Start()
+    {
+        apples = 0;
+        chicken = 0;
+        broccoli = 0;
+        oil = 0;
+        onion = 0;
+        tables = 0;
+    }
 
     public void addItem(string itemName){
         FindObjectOfType<audioManager>().play("collect");
@@ -36,6 +46,11 @@ public class Collector : MonoBehaviour
         {
             onion++;
             FC.changeOnion(onion);
+        }
+        else if(itemName == "table")
+        {
+            tables++;
+            FC.changeTable(tables);
         }
    }
    public int getApples(){
