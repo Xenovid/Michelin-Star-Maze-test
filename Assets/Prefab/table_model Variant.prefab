@@ -6,7 +6,11 @@ CapsuleCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 2830295994351001109}
+=======
+  m_GameObject: {fileID: 1924124620286616904}
+>>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -14,6 +18,7 @@ CapsuleCollider:
   m_Height: 13.392824
   m_Direction: 1
   m_Center: {x: 0, y: 4, z: 0}
+<<<<<<< Updated upstream
 --- !u!65 &249469459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41,6 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: table
 --- !u!1001 &3136285346838192964
+=======
+--- !u!1001 &1617554176979064857
+>>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -117,8 +125,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
+<<<<<<< Updated upstream
 --- !u!1 &2830295994351001109 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
   m_PrefabInstance: {fileID: 3136285346838192964}
+=======
+--- !u!1 &1924124620286616904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
+  m_PrefabInstance: {fileID: 1617554176979064857}
+>>>>>>> Stashed changes
   m_PrefabAsset: {fileID: 0}
