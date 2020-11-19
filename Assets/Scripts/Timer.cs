@@ -25,6 +25,8 @@ public class Timer : MonoBehaviour
             audioManager s = FindObjectOfType<audioManager>();
             s.play("time");
             isTimerRunning = false;
+            audioManager s = FindObjectOfType<audioManager>();
+            s.play("timer");
             FC.timerFinished();
         }
     }
