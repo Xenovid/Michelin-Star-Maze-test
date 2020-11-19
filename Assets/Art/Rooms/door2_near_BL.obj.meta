@@ -3,7 +3,17 @@ guid: 3cea8b96bd751f54996806e2941c9703
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door2_near_BL_door2_nearMat
+    second: {fileID: 2100000, guid: f0d51345f6b73185ab75aa5a2151231f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floorMat
+    second: {fileID: 2100000, guid: 421a0e8e0c54984d49a803d413f81147, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

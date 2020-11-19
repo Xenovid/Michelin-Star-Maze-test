@@ -21,8 +21,6 @@ public class startingMessager : MonoBehaviour
         messages[i - 1].SetActive(false);
         if(i < messages.Length){
             messages[i].SetActive(true);
-            audioManager s = FindObjectOfType<audioManager>();
-            s.play("message");
         }
         else{
             Time.timeScale = 1.0f;
