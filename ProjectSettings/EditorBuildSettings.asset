@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options Menu.unity
     guid: 1339df04d2912774db5d2e5968a9ae17
+  - enabled: 1
+    path: Assets/Scenes/Procedural Stuffs.unity
+    guid: 5095de4130b5e8e44a7707707a317570
   m_configObjects: {}

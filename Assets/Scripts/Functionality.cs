@@ -26,4 +26,8 @@ public class Functionality : MonoBehaviour
 
         SceneManager.LoadScene("Options Menu");
     }
+    public void PCG()
+    {
+        SceneManager.LoadScene("Procedural Stuffs");
+    }
 }
