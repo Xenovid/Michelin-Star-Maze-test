@@ -15,6 +15,8 @@ public class RoomTemplates : MonoBehaviour
 
     public GameObject[] Foods;
 
+    public GameObject[] Lights;
+
     public List<GameObject> newrooms;
 
     
