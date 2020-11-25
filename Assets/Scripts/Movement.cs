@@ -46,9 +46,9 @@ public class Movement : MonoBehaviour
         else
         {
             isSprinting = false;
-            if (statima <= maxStatima)
+            if (statima <= maxStatima && !(Input.GetAxis("Sprint") == 1))
             {
-                statima += 4 * Time.deltaTime;
+                statima += 2 * Time.deltaTime;
             }
         }
 

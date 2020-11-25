@@ -16,7 +16,7 @@ public class ItemSpawner : MonoBehaviour
         
         templates.Tables[0].transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         rand = (templates.newrooms.Count - 1);
-        Instantiate(templates.Tables[1], new Vector3(templates.newrooms[rand].transform.position.x, 1.5f, templates.newrooms[rand].transform.position.z), templates.Tables[1].transform.rotation);
+        //Instantiate(templates.Tables[1], new Vector3(templates.newrooms[rand].transform.position.x, 1.5f, templates.newrooms[rand].transform.position.z), templates.Tables[1].transform.rotation);
         templates.newrooms.RemoveAt(rand);
         for (i = 0; i < 6; i++)
         {

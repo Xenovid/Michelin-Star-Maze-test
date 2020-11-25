@@ -9,7 +9,7 @@ public class AddSpawn : MonoBehaviour
 
     void Start()
     {
-        spawna = GameObject.FindGameObjectWithTag("Spawn Point").GetComponent<SpawnTemplates>();
+        spawna = GameObject.Find("Spawn Templates").GetComponent<SpawnTemplates>();
         spawna.spawns.Add(this.gameObject);
 
         
