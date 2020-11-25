@@ -93,15 +93,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: -1459248972880661088, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
       propertyPath: m_Materials.Array.size
@@ -113,7 +113,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e3a8422c9d125af47868ff7a95dad0c7, type: 2}
     - target: {fileID: 919132149155446097, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}
       propertyPath: m_Name
-      value: table_model
+      value: table_model Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f1ea90ff8484549b81c968b770ded9, type: 3}

@@ -23,7 +23,7 @@ public class RoomSpawner : MonoBehaviour
     private int rand2;
     int i;
     private bool spawned = false;
-    public GameObject spawn;
+    //public GameObject spawn;
     
 
     void Start()
@@ -36,35 +36,38 @@ public class RoomSpawner : MonoBehaviour
     void ClosedRoom()
     {
         int i;
-        spawna = GameObject.FindGameObjectWithTag("Spawn Point").GetComponent<SpawnTemplates>();
-        for (i = 0; i <= spawna.spawns.Count; i++)
+        //changed it from FindObjectWithTag to Find since it kept getting the spawn points on the rooms instead of the Spawn Templates object
+        spawna = GameObject.Find("Spawn Templates").GetComponent<SpawnTemplates>();
+        //changed to < from <= to see if it fixes the index problem
+        for (i = 0; i < spawna.spawns.Count; i++)
         {
+            UnityEngine.Debug.Log(spawna.spawns.Count);
             if (spawna.spawns[i] != null)
             {
                 if (openingDirection == 1)
                 {
                     //Need spawn Bottom Door
-                    
-                    Instantiate(templates.closedRoom[1], transform.position, templates.closedRoom[1].transform.rotation);
+
+                    //Instantiate(templates.closedRoom[1], transform.position, templates.closedRoom[1].transform.rotation);
 
                 }
                 else if (openingDirection == 2)
                 {
                     //Need Top Door
-                    
-                    Instantiate(templates.closedRoom[2], transform.position, templates.closedRoom[2].transform.rotation);
+
+                    //Instantiate(templates.closedRoom[2], transform.position, templates.closedRoom[2].transform.rotation);
                 }
                 else if (openingDirection == 3)
                 {
                     //Need Left Door
-                    
-                    Instantiate(templates.closedRoom[4], transform.position, templates.closedRoom[3].transform.rotation);
+
+                    //Instantiate(templates.closedRoom[4], transform.position, templates.closedRoom[3].transform.rotation);
                 }
                 else if (openingDirection == 4)
-                { }
-                    
-                    Instantiate(templates.closedRoom[3], transform.position, templates.closedRoom[4].transform.rotation);
-                
+                {
+
+                    //Instantiate(templates.closedRoom[3], transform.position, templates.closedRoom[4].transform.rotation);
+                }
                 spawned = true;
             }
         }

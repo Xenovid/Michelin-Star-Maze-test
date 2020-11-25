@@ -5,7 +5,7 @@ using UnityEngine;
 public class TableFunction : MonoBehaviour
 {
     public string itemName;
-    private bool isTablePhase;
+    private bool isTablePhase = false;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "player" && isTablePhase)
@@ -29,6 +29,12 @@ public class TableFunction : MonoBehaviour
         if (!isTablePhase)
         {
             foodChecker fc = FindObjectOfType<foodChecker>();
+            if(fc == null)
+            {
+                Debug.Log("foodchecker not found");
+
+                
+            }
             fc.getIscollectingFood();
             if (!fc.getIscollectingFood())
             {
