@@ -42,6 +42,7 @@ public class Movement : MonoBehaviour
         {
             isSprinting = true;
             statima -= Time.deltaTime;
+            statimaBar.transform.localScale = new Vector3(.5f, 1f, 2 * statima / maxStatima);
         }
         else
         {
@@ -49,6 +50,7 @@ public class Movement : MonoBehaviour
             if (statima <= maxStatima && !(Input.GetAxis("Sprint") == 1))
             {
                 statima += 2 * Time.deltaTime;
+                statimaBar.transform.localScale = new Vector3(.5f, 1f, 2 * statima / maxStatima);
             }
         }
 

@@ -39,6 +39,7 @@ public class ItemSpawner : MonoBehaviour
             {
                 UnityEngine.Random.seed = UnityEngine.Random.Range(0, 100);
                 rand = UnityEngine.Random.Range(0, templates.newrooms.Count-1);
+                //change i to j
                 Instantiate(templates.Foods[j], new Vector3(templates.newrooms[rand].transform.position.x+2, 1.7f, templates.newrooms[rand].transform.position.z-2), templates.Foods[0].transform.rotation);
                 Instantiate(templates.Lights[0], new Vector3(templates.newrooms[rand].transform.position.x + 2, 12f, templates.newrooms[rand].transform.position.z - 2), templates.Lights[0].transform.rotation);
             }
