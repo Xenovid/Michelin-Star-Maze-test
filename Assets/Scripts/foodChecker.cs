@@ -21,7 +21,7 @@ public class foodChecker : MonoBehaviour
 
 
     public float timeLimit;
-    private bool isCollectingFood;
+    private bool isCollectingFood = true;
 
     public bool getIscollectingFood()
     {
