@@ -51,15 +51,18 @@ public class ItemSpawner : MonoBehaviour
                 //Instantiate(templates.Lights[0], new Vector3(templates.newrooms[rand].transform.position.x + change, 12f, templates.newrooms[rand].transform.position.z - change), templates.Lights[0].transform.rotation);
             //}
         }
-        int foodcount = templates.Foods.Length;
-        for (j = 0; j < foodcount; j++)
+        for (int a = 0; a <= 5; a++)
         {
-            UnityEngine.Random.seed = UnityEngine.Random.Range(0, 100);
-            rand = UnityEngine.Random.Range(0, templates.newrooms.Count - 2);
-            change = UnityEngine.Random.Range(0, 8);
-            //change i to j
-            Instantiate(templates.Foods[j], new Vector3(templates.newrooms[rand].transform.position.x + change, 1.7f, templates.newrooms[rand].transform.position.z), templates.Foods[0].transform.rotation);
-            Instantiate(templates.Lights[j], new Vector3(templates.newrooms[rand].transform.position.x + change, 12f, templates.newrooms[rand].transform.position.z), templates.Lights[0].transform.rotation);
+            int foodcount = templates.Foods.Length;
+            for (j = 0; j < foodcount; j++)
+            {
+                UnityEngine.Random.seed = UnityEngine.Random.Range(0, 100);
+                rand = UnityEngine.Random.Range(0, templates.newrooms.Count - 2);
+                change = UnityEngine.Random.Range(0, 5);
+                //change i to j
+                Instantiate(templates.Foods[j], new Vector3(templates.newrooms[rand].transform.position.x + change, 1.7f, templates.newrooms[rand].transform.position.z), templates.Foods[0].transform.rotation);
+                Instantiate(templates.Lights[j], new Vector3(templates.newrooms[rand].transform.position.x + change, 12f, templates.newrooms[rand].transform.position.z), templates.Lights[0].transform.rotation);
+            }
         }
     }
 
