@@ -278,6 +278,8 @@ MonoBehaviour:
   Foods:
   - {fileID: 39475596220242080, guid: 44ce87b618e94b5609cf0af70384fa63, type: 3}
   - {fileID: 4133171109057702524, guid: f295933b86b0810c0adfacf199ae656e, type: 3}
+  - {fileID: 919132149155446097, guid: 341ac83eaa6555f4db8fe03c0158f52a, type: 3}
+  - {fileID: 919132149155446097, guid: 5d0c50906b6b6294fbc3f07adb0a7c44, type: 3}
   Lights:
   - {fileID: 4540189389588106492, guid: 53520790f695e604b8fc597eba182af7, type: 3}
   - {fileID: 4540189389588106492, guid: 47e11502756328f48b5a80dd559835c2, type: 3}
