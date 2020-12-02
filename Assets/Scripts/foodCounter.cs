@@ -15,6 +15,12 @@ public class foodCounter : MonoBehaviour
 
     public foodChecker FCH;
     public RoomTemplates templates;
+    public GameObject appleimage;
+    public GameObject chickenimage;
+    public GameObject broccoliimage;
+    public GameObject oilimage;
+    public GameObject onionimage;
+    
 
     private void Start()
     {
@@ -29,26 +35,30 @@ public class foodCounter : MonoBehaviour
     public void changeApple(int num){
         Text appleTxt = appleCount.GetComponent<Text>();
         appleTxt.text = "Apples" + " " + num.ToString() + "/" + FCH.requiredApples;
-        
+        appleimage = GameObject.FindWithTag("AppleCount");
     }
     public void changeChicken(int num){
         Text chickenTxt = chickenCount.GetComponent<Text>();
         chickenTxt.text = "Chicken" + " " + num.ToString() + "/" + FCH.requiredChicken.ToString();
+        chickenimage = GameObject.FindWithTag("ChickenCount");
     }
     public void changeBroccoli(int num)
     {
         Text broccoliTxt = broccoliCount.GetComponent<Text>();
         broccoliTxt.text = "Broccoli" + " " + num.ToString() + "/" + FCH.requiredBroccoli.ToString();
+        broccoliimage = GameObject.FindWithTag("BroccoliCount");
     }
     public void changeOil(int num)
     {
         Text oilTxt = oilCount.GetComponent<Text>();
         oilTxt.text = "Oil" + " " + num.ToString() + "/" + FCH.requiredOil.ToString();
+        oilimage = GameObject.FindWithTag("OilCount");
     }
     public void changeOnion(int num)
     {
         Text onionTxt = onionCount.GetComponent<Text>();
         onionTxt.text = "Onion" + " " + num.ToString() + "/" + FCH.requiredOnion.ToString();
+        onionimage = GameObject.FindWithTag("OnionCount");
     }
     public void changeTable(int num)
     {
