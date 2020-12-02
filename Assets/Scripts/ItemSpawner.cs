@@ -27,6 +27,7 @@ public class ItemSpawner : MonoBehaviour
         {
             rand = UnityEngine.Random.Range(0, templates.newrooms.Count-2);
             Instantiate(templates.Tables[0], new Vector3(templates.newrooms[rand].transform.position.x, 1.5f, templates.newrooms[rand].transform.position.z), templates.Tables[0].transform.rotation);
+            templates.newrooms.RemoveAt(rand);
         }
 
         int change;
@@ -56,12 +57,11 @@ public class ItemSpawner : MonoBehaviour
             int foodcount = templates.Foods.Length;
             for (j = 0; j < foodcount; j++)
             {
-                UnityEngine.Random.seed = UnityEngine.Random.Range(0, 100);
                 rand = UnityEngine.Random.Range(0, templates.newrooms.Count - 2);
                 change = UnityEngine.Random.Range(0, 5);
                 //change i to j
                 Instantiate(templates.Foods[j], new Vector3(templates.newrooms[rand].transform.position.x + change, 1.7f, templates.newrooms[rand].transform.position.z), templates.Foods[0].transform.rotation);
-                Instantiate(templates.Lights[j], new Vector3(templates.newrooms[rand].transform.position.x + change, 12f, templates.newrooms[rand].transform.position.z), templates.Lights[0].transform.rotation);
+                
             }
         }
     }
