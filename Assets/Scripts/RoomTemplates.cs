@@ -17,6 +17,8 @@ public class RoomTemplates : MonoBehaviour
 
     public GameObject[] Lights;
 
+    public GameObject[] Counter;
+
     public List<GameObject> newrooms;
 
     

@@ -278,9 +278,20 @@ MonoBehaviour:
   Foods:
   - {fileID: 39475596220242080, guid: 44ce87b618e94b5609cf0af70384fa63, type: 3}
   - {fileID: 4133171109057702524, guid: f295933b86b0810c0adfacf199ae656e, type: 3}
+  - {fileID: 8083594369264554319, guid: c3ee93b34f138c5469e2853d19e04dd2, type: 3}
+  - {fileID: 5402236819151942078, guid: 436ff60532f7c9e4b8eeb6ec589dc347, type: 3}
   Lights:
   - {fileID: 4540189389588106492, guid: 53520790f695e604b8fc597eba182af7, type: 3}
   - {fileID: 4540189389588106492, guid: 47e11502756328f48b5a80dd559835c2, type: 3}
+  - {fileID: 4540189389588106492, guid: d396de204fd0f5c4a922be7c04278bfd, type: 3}
+  - {fileID: 4540189389588106492, guid: e47ed3c44168deb4cbba212f0253d7de, type: 3}
+  Counter:
+  - {fileID: 237790747244910236, guid: 31a22be31afe3c7498ebfb842e13af7f, type: 3}
+  - {fileID: 237790747244910236, guid: 25027ffeca1591c4ba744fa943a345f9, type: 3}
+  - {fileID: 237790747244910236, guid: d9c183756df973a499e3dc977a83d6c0, type: 3}
+  - {fileID: 237790747244910236, guid: 16841ac05fd7614418204c669c72c3e7, type: 3}
+  - {fileID: 237790747244910236, guid: c13fa7c2d0a992c4da76429828c3906c, type: 3}
+  - {fileID: 237790747244910236, guid: 0dc20654b37480f46bfd09a04363741e, type: 3}
   newrooms: []
 --- !u!4 &29746008
 Transform:
@@ -308,6 +319,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1546726208495479845, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_TagString
+      value: BroccoliCount
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598903077790123632, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_TagString
+      value: ChickenCount
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803063843725866680, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_TagString
+      value: OilCount
+      objectReference: {fileID: 0}
     - target: {fileID: 3325545074019717177, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -412,6 +435,10 @@ PrefabInstance:
       propertyPath: FC
       value: 
       objectReference: {fileID: 1379811926}
+    - target: {fileID: 8231144812473070481, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_TagString
+      value: AppleCount
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
 --- !u!1 &351391277
