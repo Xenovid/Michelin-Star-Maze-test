@@ -56,7 +56,7 @@ public class foodChecker : MonoBehaviour
     }
     public void checkTableCount(int num)
     {
-        if(num >= requiredTables)
+        if(num >= requiredTables && !isCollectingFood)
         {
             Time.timeScale = 0f;
             Text txt = RB.transform.Find("Text").GetComponent<Text>();
