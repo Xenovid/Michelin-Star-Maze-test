@@ -522,6 +522,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3325545074019717180, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_TagString
+      value: Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 3325545074019717181, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: FCH
       value: 
@@ -530,13 +534,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3325545074827103073, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_TagString
+      value: AppleCount
+      objectReference: {fileID: 0}
     - target: {fileID: 3325545075423429178, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: FC
       value: 
       objectReference: {fileID: 1379811926}
     - target: {fileID: 8231144812473070481, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_TagString
-      value: AppleCount
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}

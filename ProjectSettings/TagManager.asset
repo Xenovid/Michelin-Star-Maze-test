@@ -13,6 +13,7 @@ TagManager:
   - BroccoliCount
   - OilCount
   - OnionCount
+  - Canvas
   layers:
   - Default
   - TransparentFX
