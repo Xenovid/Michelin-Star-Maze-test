@@ -3,7 +3,27 @@ guid: 7e75927596edc574e8847381005714b0
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: customer1_body_customer1Mat
+    second: {fileID: 2100000, guid: 568cdf47409282c17bd094dd6bae202b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: customer1_customer1_LarmMat
+    second: {fileID: 2100000, guid: 568cdf47409282c17bd094dd6bae202b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: customer1_customer1_RarmMat
+    second: {fileID: 2100000, guid: 568cdf47409282c17bd094dd6bae202b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: customer1_customer1_chairMat
+    second: {fileID: 2100000, guid: 568cdf47409282c17bd094dd6bae202b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

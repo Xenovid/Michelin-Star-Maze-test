@@ -31,8 +31,11 @@ public class foodChecker : MonoBehaviour
 
     private void Start() {
         isCollectingFood = true;
+    }
+    public void startCollecting(){
         tim.startTimer(timeLimit);
     }
+
 
     private void OnTriggerEnter(Collider other) {
         Debug.Log("object entered");

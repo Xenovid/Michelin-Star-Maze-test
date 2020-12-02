@@ -71,6 +71,15 @@ public class RoomSpawner : MonoBehaviour
                 spawned = true;
             }
         }
+        GameObject FC = GameObject.Find("foodChecker");
+        if(FC == null){
+            UnityEngine.Debug.Log("foodchecker not found");
+        }
+        else{
+            foodChecker fc = FC.GetComponent<foodChecker>();
+            fc.startCollecting();
+        }
+        
     }
     void Spawn()
     {
