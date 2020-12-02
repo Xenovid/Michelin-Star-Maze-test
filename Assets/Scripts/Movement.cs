@@ -24,59 +24,64 @@ public class Movement : MonoBehaviour
     bool isGrounded;
     Vector3 velocity;
 
+    private bool moveable;
+
     private void Start()
     {
+        moveable = false;
         statima = maxStatima;
     }
 
     void Update() {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistace, groundMask);
-        if(isGrounded && velocity.y < 0){
-            velocity.y = -2f;
-        }
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-
-        if(statima > 0 && Input.GetAxis("Sprint") == 1)
-        {
-            isSprinting = true;
-            statima -= Time.deltaTime;
-            statimaBar.transform.localScale = new Vector3(.5f, 1f, 2 * statima / maxStatima);
-        }
-        else
-        {
-            isSprinting = false;
-            if (statima <= maxStatima && !(Input.GetAxis("Sprint") == 1))
-            {
-                statima += 2 * Time.deltaTime;
-                statimaBar.transform.localScale = new Vector3(.5f, 1f, 2 * statima / maxStatima);
+        if(moveable){
+            isGrounded = Physics.CheckSphere(groundCheck.position, groundDistace, groundMask);
+            if(isGrounded && velocity.y < 0){
+                velocity.y = -2f;
             }
-        }
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
+            Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if(direction.magnitude >= 0.1f){
-            if (isSprinting)
+            if(statima > 0 && Input.GetAxis("Sprint") == 1)
             {
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-                Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                controller.Move(moveDir * speed * Time.deltaTime + (Time.deltaTime * moveDir * Input.GetAxis("Sprint") * (sprintSpeed - 1)));
+                isSprinting = true;
+                statima -= Time.deltaTime;
+                statimaBar.transform.localScale = new Vector3(.5f, 1f, 2 * statima / maxStatima);
             }
             else
             {
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-                Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                controller.Move(moveDir * speed * Time.deltaTime);
+                isSprinting = false;
+                if (statima <= maxStatima && !(Input.GetAxis("Sprint") == 1))
+                {
+                    statima += 2 * Time.deltaTime;
+                    statimaBar.transform.localScale = new Vector3(.5f, 1f, 2 * statima / maxStatima);
+                }
             }
-        }
-        velocity.y += gravity * Time.deltaTime;
 
-        controller.Move(velocity * Time.deltaTime);
+            if(direction.magnitude >= 0.1f){
+                if (isSprinting)
+                {
+                    float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+                    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                    transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+                    Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                    controller.Move(moveDir * speed * Time.deltaTime + (Time.deltaTime * moveDir * Input.GetAxis("Sprint") * (sprintSpeed - 1)));
+                }
+                else
+                {
+                    float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+                    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                    transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+                    Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                    controller.Move(moveDir * speed * Time.deltaTime);
+                }
+            }
+            velocity.y += gravity * Time.deltaTime;
+
+            controller.Move(velocity * Time.deltaTime);
+        }
 
     }
 }
