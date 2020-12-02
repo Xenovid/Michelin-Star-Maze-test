@@ -8,6 +8,11 @@ TagManager:
   - Spawn Point
   - Rooms
   - Foods
+  - AppleCount
+  - ChickenCount
+  - BroccoliCount
+  - OilCount
+  - OnionCount
   layers:
   - Default
   - TransparentFX

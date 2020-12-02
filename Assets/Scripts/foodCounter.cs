@@ -14,6 +14,7 @@ public class foodCounter : MonoBehaviour
     public GameObject backDrop;
 
     public foodChecker FCH;
+    public RoomTemplates templates;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class foodCounter : MonoBehaviour
     public void changeApple(int num){
         Text appleTxt = appleCount.GetComponent<Text>();
         appleTxt.text = "Apples" + " " + num.ToString() + "/" + FCH.requiredApples;
+        
     }
     public void changeChicken(int num){
         Text chickenTxt = chickenCount.GetComponent<Text>();

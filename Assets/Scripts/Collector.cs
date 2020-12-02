@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Collector : MonoBehaviour
 {
@@ -10,8 +11,9 @@ public class Collector : MonoBehaviour
    private int oil = 0;
    private int onion = 0;
    private int tables = 0;
-
+   
    public foodCounter FC;
+   
 
     private void Start()
     {
@@ -28,6 +30,7 @@ public class Collector : MonoBehaviour
         if (itemName == "apple"){
            apples++;
            FC.changeApple(apples);
+           
        }
        else if(itemName == "chicken"){
             chicken++;
