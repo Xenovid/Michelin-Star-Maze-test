@@ -30,32 +30,30 @@ public class foodCounter : MonoBehaviour
 
     public void changeApple(int num){
         Text appleTxt = appleCount.GetComponent<Text>();
-        appleTxt.text = "Apples" + " " + num.ToString() + "/" + FCH.requiredApples;
-        
-        
-        
+        appleTxt.text = num.ToString() + "/" + "5";
+          
     }
     public void changeChicken(int num){
         Text chickenTxt = chickenCount.GetComponent<Text>();
-        chickenTxt.text = "Chicken" + " " + num.ToString() + "/" + FCH.requiredChicken.ToString();
+        chickenTxt.text = num.ToString() + "/" + "5";
         
     }
     public void changeBroccoli(int num)
     {
         Text broccoliTxt = broccoliCount.GetComponent<Text>();
-        broccoliTxt.text = "Broccoli" + " " + num.ToString() + "/" + FCH.requiredBroccoli.ToString();
+        broccoliTxt.text = num.ToString() + "/" + "5";
         
     }
     public void changeOil(int num)
     {
         Text oilTxt = oilCount.GetComponent<Text>();
-        oilTxt.text = "Oil" + " " + num.ToString() + "/" + FCH.requiredOil.ToString();
+        oilTxt.text = num.ToString() + "/" + "5";
         
     }
     public void changeOnion(int num)
     {
         Text onionTxt = onionCount.GetComponent<Text>();
-        onionTxt.text = "Onion" + " " + num.ToString() + "/" + FCH.requiredOnion.ToString();
+        onionTxt.text = num.ToString() + "/" + "5";
         
     }
     public void changeTable(int num)

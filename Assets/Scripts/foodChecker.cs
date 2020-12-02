@@ -10,11 +10,11 @@ public class foodChecker : MonoBehaviour
     public Timer tim;
     public GameObject RB;
 
-    public int requiredApples;
-    public int requiredChicken;
-    public int requiredBroccoli;
-    public int requiredOil;
-    public int requiredOnion;
+    public int requiredApples = 5;
+    public int requiredChicken = 5;
+    public int requiredBroccoli = 5;
+    public int requiredOil = 5;
+    public int requiredOnion = 5;
 
     public int requiredTables;
 

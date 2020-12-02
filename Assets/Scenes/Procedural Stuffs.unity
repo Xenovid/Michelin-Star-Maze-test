@@ -430,6 +430,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: OilCount
       objectReference: {fileID: 0}
+    - target: {fileID: 3325545073725678761, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 3325545074019717177, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -530,18 +534,42 @@ PrefabInstance:
       propertyPath: FCH
       value: 
       objectReference: {fileID: 1379811926}
+    - target: {fileID: 3325545074023890966, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 3325545074268762226, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325545074502991458, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3325545074827103073, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_TagString
       value: AppleCount
       objectReference: {fileID: 0}
+    - target: {fileID: 3325545074827103075, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325545075337989291, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 3325545075423429178, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: FC
       value: 
       objectReference: {fileID: 1379811926}
+    - target: {fileID: 3325545075529786068, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325545075564065143, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 8231144812473070481, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_TagString
       value: Untagged
