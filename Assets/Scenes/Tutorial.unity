@@ -4431,6 +4431,10 @@ PrefabInstance:
       propertyPath: maxStatima
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4406734767073733257, guid: eb55cbcacf84f35b6bef4a94ca07b54f, type: 3}
+      propertyPath: moveable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4406734767073733258, guid: eb55cbcacf84f35b6bef4a94ca07b54f, type: 3}
       propertyPath: m_Name
       value: Chief

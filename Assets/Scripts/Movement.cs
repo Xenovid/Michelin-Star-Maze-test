@@ -24,11 +24,10 @@ public class Movement : MonoBehaviour
     bool isGrounded;
     Vector3 velocity;
 
-    private bool moveable;
+    public bool moveable;
 
     private void Start()
     {
-        moveable = false;
         statima = maxStatima;
     }
 

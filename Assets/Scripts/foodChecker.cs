@@ -34,6 +34,8 @@ public class foodChecker : MonoBehaviour
     }
     public void startCollecting(){
         tim.startTimer(timeLimit);
+        Movement move = GameObject.Find("Chief").GetComponent<Movement>();
+        move.moveable = true;
     }
 
 

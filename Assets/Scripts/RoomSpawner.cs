@@ -79,7 +79,8 @@ public class RoomSpawner : MonoBehaviour
         if(FC == null){
             UnityEngine.Debug.Log("foodchecker not found");
         }
-        else{
+        else
+        {
             foodChecker fc = FC.GetComponent<foodChecker>();
             fc.startCollecting();
         }

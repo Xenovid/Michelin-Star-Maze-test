@@ -40,7 +40,6 @@ public class ItemSpawner : MonoBehaviour
                 Debug.Log("wayyyyyyyy to much");
                 break;
             }
-            //changed to 2 since there is currently only 2 foods implemented
             
             //for (j = 0; j < foodcount; j++)
             //{

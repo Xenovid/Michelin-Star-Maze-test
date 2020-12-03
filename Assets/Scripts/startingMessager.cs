@@ -25,6 +25,7 @@ public class startingMessager : MonoBehaviour
         else{
             Time.timeScale = 1.0f;
             button.SetActive(false);
+            GameObject.Find("foodChecker").GetComponent<foodChecker>().startCollecting();
         }
     }
     public void startMessenger(){
