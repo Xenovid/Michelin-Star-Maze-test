@@ -22,12 +22,15 @@ public class foodChecker : MonoBehaviour
 
     public float timeLimit;
     private bool isCollectingFood = true;
+    private bool isLoaded = false;
 
     public bool getIscollectingFood()
     {
         return isCollectingFood;
     }
-
+    public bool getIsloaded(){
+        return isLoaded;
+    }
 
     private void Start() {
         isCollectingFood = true;
@@ -36,6 +39,7 @@ public class foodChecker : MonoBehaviour
         tim.startTimer(timeLimit);
         Movement move = GameObject.Find("Chief").GetComponent<Movement>();
         move.moveable = true;
+        isLoaded = true;
     }
 
 
