@@ -29,5 +29,8 @@ public class Functionality : MonoBehaviour
     public void PCG()
     {
         SceneManager.LoadScene("Procedural Stuffs");
+        audioManager s = FindObjectOfType<audioManager>();
+        s.play("backgroundMusic");
+        s.mute("MenuMusic");   
     }
 }
