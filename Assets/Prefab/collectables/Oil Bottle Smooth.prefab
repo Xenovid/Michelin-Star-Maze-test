@@ -152,6 +152,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spot Light 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5774964890891038572, guid: e47ed3c44168deb4cbba212f0253d7de, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774964890891038572, guid: e47ed3c44168deb4cbba212f0253d7de, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774964890891038572, guid: e47ed3c44168deb4cbba212f0253d7de, type: 3}
+      propertyPath: m_Range
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774964890891038572, guid: e47ed3c44168deb4cbba212f0253d7de, type: 3}
+      propertyPath: m_ShadowRadius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8559719876655333795, guid: e47ed3c44168deb4cbba212f0253d7de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

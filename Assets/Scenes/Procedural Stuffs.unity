@@ -285,6 +285,7 @@ MonoBehaviour:
   - {fileID: 4133171109057702524, guid: f295933b86b0810c0adfacf199ae656e, type: 3}
   - {fileID: 8083594369264554319, guid: c3ee93b34f138c5469e2853d19e04dd2, type: 3}
   - {fileID: 5402236819151942078, guid: 436ff60532f7c9e4b8eeb6ec589dc347, type: 3}
+  - {fileID: 8707845717828932395, guid: 0f35bc47c91886746b48555ed5d38d37, type: 3}
   Lights:
   - {fileID: 4540189389588106492, guid: 53520790f695e604b8fc597eba182af7, type: 3}
   - {fileID: 4540189389588106492, guid: 47e11502756328f48b5a80dd559835c2, type: 3}
@@ -484,7 +485,7 @@ Transform:
   m_GameObject: {fileID: 291192684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.2944365, y: -0.29475403, z: 150.50002}
-  m_LocalScale: {x: 2, y: 2, z: 10}
+  m_LocalScale: {x: 2, y: 2, z: 11}
   m_Children: []
   m_Father: {fileID: 1424114835}
   m_RootOrder: 0
@@ -892,10 +893,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5288108592296296116, guid: 2e8c3a108e9d498158e51f211c2e8ddc, type: 3}
       propertyPath: requiredOil
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5288108592296296116, guid: 2e8c3a108e9d498158e51f211c2e8ddc, type: 3}
       propertyPath: requiredOnion
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288108592296296116, guid: 2e8c3a108e9d498158e51f211c2e8ddc, type: 3}
+      propertyPath: requiredBroccoli
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5288108592296296119, guid: 2e8c3a108e9d498158e51f211c2e8ddc, type: 3}
