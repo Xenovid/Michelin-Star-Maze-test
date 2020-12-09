@@ -465,6 +465,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5711052370896006010, guid: 0e69b01d89d64324cb927f30fd0d0693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4610400837745716135, guid: 0e69b01d89d64324cb927f30fd0d0693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -3230359877503427227, guid: 0e69b01d89d64324cb927f30fd0d0693, type: 3}
       propertyPath: m_RenderingLayerMask
       value: 4294967295

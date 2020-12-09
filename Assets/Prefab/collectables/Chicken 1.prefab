@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 2368248417273779669}
   - component: {fileID: 1294801670183530817}
   - component: {fileID: 293808578692581260}
+  - component: {fileID: 6948318661122004401}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -142,6 +143,19 @@ CapsuleCollider:
   m_Height: 0.998028
   m_Direction: 2
   m_Center: {x: 0.0000005066395, y: 0, z: -0.055746973}
+--- !u!114 &6948318661122004401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8555912684711722916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569b21d648aade4609535c01680f078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: chicken
 --- !u!1001 &542592096925757081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167,7 +181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5774964890891038572, guid: 47e11502756328f48b5a80dd559835c2, type: 3}
       propertyPath: m_Range
-      value: 40
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774964890891038572, guid: 47e11502756328f48b5a80dd559835c2, type: 3}
+      propertyPath: m_Intensity
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8559719876655333795, guid: 47e11502756328f48b5a80dd559835c2, type: 3}
       propertyPath: m_LocalPosition.x

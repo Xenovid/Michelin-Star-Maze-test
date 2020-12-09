@@ -218,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5711052370896006010, guid: 15c3b7f97746a5e41baadae3a007f284, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3230359877503427227, guid: 15c3b7f97746a5e41baadae3a007f284, type: 3}
       propertyPath: m_RenderingLayerMask
@@ -230,7 +230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3945400583632287888, guid: 15c3b7f97746a5e41baadae3a007f284, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15c3b7f97746a5e41baadae3a007f284, type: 3}

@@ -196,7 +196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
-  spawn: {fileID: 0}
 --- !u!65 &5376256045058618865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -285,7 +284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
-  spawn: {fileID: 0}
 --- !u!65 &3893243807847677339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -378,9 +376,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5711052370896006010, guid: 4bcb5c6b4853d5a45a762ecc36d28df7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4bcb5c6b4853d5a45a762ecc36d28df7, type: 3}
       propertyPath: m_Name
       value: door2_near_LF
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064278470017668592, guid: 4bcb5c6b4853d5a45a762ecc36d28df7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bcb5c6b4853d5a45a762ecc36d28df7, type: 3}

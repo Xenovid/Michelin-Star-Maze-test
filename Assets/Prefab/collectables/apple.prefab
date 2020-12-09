@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6d752d9d05048029b9e381c213480002, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d752d9d05048029b9e381c213480002, type: 3}
 --- !u!4 &3262959807799523374 stripped
@@ -206,11 +210,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5774964890891038572, guid: 53520790f695e604b8fc597eba182af7, type: 3}
       propertyPath: m_ShadowRadius
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5774964890891038572, guid: 53520790f695e604b8fc597eba182af7, type: 3}
       propertyPath: m_Range
-      value: 40
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774964890891038572, guid: 53520790f695e604b8fc597eba182af7, type: 3}
+      propertyPath: m_Intensity
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8559719876655333795, guid: 53520790f695e604b8fc597eba182af7, type: 3}
       propertyPath: m_LocalPosition.x

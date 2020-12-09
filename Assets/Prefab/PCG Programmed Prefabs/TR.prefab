@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
-  spawn: {fileID: 0}
 --- !u!65 &6175222507675009417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -285,7 +284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
-  spawn: {fileID: 0}
 --- !u!65 &2311910349787944542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -378,6 +376,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5711052370896006010, guid: e46f5b29b9b574144ad271a435992a17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e46f5b29b9b574144ad271a435992a17, type: 3}
       propertyPath: m_Name
       value: door2_near_RB
@@ -397,6 +399,10 @@ PrefabInstance:
     - target: {fileID: 3979672853063080658, guid: e46f5b29b9b574144ad271a435992a17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8812994498088582600, guid: e46f5b29b9b574144ad271a435992a17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e46f5b29b9b574144ad271a435992a17, type: 3}

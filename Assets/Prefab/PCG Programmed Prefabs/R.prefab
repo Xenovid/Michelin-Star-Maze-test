@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 0
-  spawn: {fileID: 0}
 --- !u!65 &7943569278081574129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -212,6 +211,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7ba19ce3f6b95b64fa825d7a50b64409, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6360108752876571581, guid: 7ba19ce3f6b95b64fa825d7a50b64409, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5711052370896006010, guid: 7ba19ce3f6b95b64fa825d7a50b64409, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7ba19ce3f6b95b64fa825d7a50b64409, type: 3}
       propertyPath: m_Name
