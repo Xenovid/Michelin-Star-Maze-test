@@ -20,7 +20,7 @@ public class ItemSpawner : MonoBehaviour
         rand = (templates.newrooms.Count - 1);
         _gameObject = GameObject.Find("foodChecker");
 
-        _gameObject.transform.position = new Vector3(templates.newrooms[rand].transform.position.x, 1.5f, templates.newrooms[rand].transform.position.z);
+        _gameObject.transform.position = new Vector3(templates.newrooms[rand].transform.position.x, 1.0f, templates.newrooms[rand].transform.position.z);
 
         templates.newrooms.RemoveAt(rand);
         for (i = 0; i < 6; i++)
