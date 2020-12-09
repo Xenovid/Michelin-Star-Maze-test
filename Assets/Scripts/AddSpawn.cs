@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AddSpawn : MonoBehaviour
 {
-    private SpawnTemplates spawna;
+    public SpawnTemplates spawna;
     
 
     void Start()
@@ -12,10 +12,12 @@ public class AddSpawn : MonoBehaviour
         spawna = GameObject.Find("Spawn Templates").GetComponent<SpawnTemplates>();
         spawna.spawns.Add(this.gameObject);
 
-        
-
-        
+        Invoke("Add", 4.0f);
     }
 
+    void Add() {
+        spawna = GameObject.Find("Spawn Templates").GetComponent<SpawnTemplates>();
+        spawna.spawns.Add(this.gameObject);
+    }
     
 }
