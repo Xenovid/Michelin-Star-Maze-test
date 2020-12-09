@@ -4364,10 +4364,41 @@ PrefabInstance:
       propertyPath: FCH
       value: 
       objectReference: {fileID: 966400875}
+    - target: {fileID: 3325545074618762326, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a933eb54e4ad47c4595bf797ad0a17f9, type: 3}
+    - target: {fileID: 3325545074618762326, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_Text
+      value: 'Move with WASD
+
+        Sprint with SHIFT
+
+        Collect Items by
+        going over them
+
+        Press esc to pause'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325545074926589322, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b934c235457c4114da5488d55358752c, type: 3}
+    - target: {fileID: 3325545075304949589, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a933eb54e4ad47c4595bf797ad0a17f9, type: 3}
+    - target: {fileID: 3325545075370408687, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b934c235457c4114da5488d55358752c, type: 3}
     - target: {fileID: 3325545075423429178, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: FC
       value: 
       objectReference: {fileID: 966400875}
+    - target: {fileID: 3325545075534559875, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
 --- !u!1001 &3700310319720325186

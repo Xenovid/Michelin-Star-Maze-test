@@ -433,7 +433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2335097610692924746, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_Name
-      value: Stamina
+      value: Image
       objectReference: {fileID: 0}
     - target: {fileID: 2456908739509123354, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -561,7 +561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3325545074268762227, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3325545074348384551, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_RootOrder
@@ -609,7 +609,7 @@ PrefabInstance:
       objectReference: {fileID: 1379811926}
     - target: {fileID: 3325545075442856635, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3325545075529786068, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -645,11 +645,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
---- !u!1 &296625201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2335097610692924746, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
-  m_PrefabInstance: {fileID: 296625200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &351391277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1456,7 @@ PrefabInstance:
     - target: {fileID: 4406734767073733257, guid: eb55cbcacf84f35b6bef4a94ca07b54f, type: 3}
       propertyPath: statimaBar
       value: 
-      objectReference: {fileID: 296625201}
+      objectReference: {fileID: 8573060302110966537, guid: fe51b04c1f010224ead6fb46905beef0, type: 3}
     - target: {fileID: 4406734767073733258, guid: eb55cbcacf84f35b6bef4a94ca07b54f, type: 3}
       propertyPath: m_Name
       value: Chief
