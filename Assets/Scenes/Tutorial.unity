@@ -4272,6 +4272,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2335097610692924746, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3325545074019717177, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4398,6 +4402,10 @@ PrefabInstance:
     - target: {fileID: 3325545075534559875, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309742428400214851, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4925f6a1ead3444fbb84114009a473f, type: 3}
